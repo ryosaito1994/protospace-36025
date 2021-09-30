@@ -48,8 +48,6 @@
               <%= comment.text%>
               <%= link_to "（#{comment.user.name}）", user_path(comment.user), class: :comment_user %>
             </li>
-              <%= " コメントのテキスト "%>
-              <%= link_to "（ ユーザー名 ）", root_path, class: :comment_user %>
           <% end %>
           <%# // 投稿に紐づくコメントを一覧する処理を記述する %>
         </ul>
